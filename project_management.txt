@@ -1,6 +1,6 @@
 App de administracion y gestion de ganancias
 
-la aplicacion sera una herramienta para llevar la contabilidad de los montos que ingresan en el culto con cada predica, correspondiente a cada pastor. 
+La aplicacion sera una herramienta para llevar la contabilidad de los montos que ingresan en el culto con cada predica, correspondiente a cada pastor.Tambien se podran visualizar los detalles personlas de cada pastor como por ejemplo el 'email', 'nombre completo', 'edad', y 'DNI'.
 Funcionalidades: 
 control de todos los pastores que pertenecen al culto
 control de todos los ingresos correspondiente a cada predica
