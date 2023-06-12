@@ -13,12 +13,12 @@ actualizacion de los datos
 autentificacion de usuario.
 Paginado
 
-Paginas:
+# Paginas:
 loggin-page: donde el usuario se logeara y se le dara acceso a la pagina
 Home-page: donde estaran una tabla principal donde estaran los detalles de todos los pastores y el paginado
 Detail-page: renderizara el Personal-detail de cada pastor con sus respectivas ingresos por predica con los temas especificados.
 
-Tecnologias: 
+# Tecnologias: 
 Front: React, bootstrap, ReduxTookList.
 Back: javaScript, Node, Express, Supabase, Nodemon.
 Base de datos: PostgreSQL.
