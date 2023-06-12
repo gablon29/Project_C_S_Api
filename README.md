@@ -19,6 +19,6 @@ Home-page: donde estaran una tabla principal donde estaran los detalles de todos
 Detail-page: renderizara el Personal-detail de cada pastor con sus respectivas ingresos por predica con los temas especificados.
 
 # Tecnologias: 
-Front: React, bootstrap, ReduxTookList.
-Back: javaScript, Node, Express, Supabase, Nodemon.
+Front: React, bootstrap, ReduxTookList.<br>
+Back: javaScript, Node, Express, Supabase, Nodemon.<br>
 Base de datos: PostgreSQL.
