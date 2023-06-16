@@ -1,0 +1,23 @@
+{
+  "name": "project_c_s_api",
+  "version": "1.0.0",
+  "description": "desarrollo del back_end del proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gablon29/Project_C_S_Api.git"
+  },
+  "author": "Gabriel_londero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gablon29/Project_C_S_Api/issues"
+  },
+  "homepage": "https://github.com/gablon29/Project_C_S_Api#readme",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
