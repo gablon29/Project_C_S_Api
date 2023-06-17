@@ -4,7 +4,7 @@ La aplicacion sera una herramienta para llevar la contabilidad de los montos que
 Funcionalidades: 
 control de todos los pastores que pertenecen al culto
 control de todos los ingresos correspondiente a cada predica
-Control de los temas de cada prédica
+Control de los temas de cada prédicas
 filtrados por ingresos
 creado de nuevos Pastores, donde podran ingresar los datos de nuevos pastores que ingresan al culto
 sumatoria de todos los ingresos
