@@ -1,2 +1,5 @@
 # ignore paquet module
 node_modules/
+
+# .ignore
+.env
