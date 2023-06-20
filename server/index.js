@@ -26,4 +26,15 @@
   `----'                                            `----'                                                                          
  */
 
+  const server = require('./app');
+  const { sequelize } = require('./db'); 
+  const { PORT } = process.env
+  // Syncing all the models at once.
+  sequelize.sync({ force: true }).then(() => {
+      console.log('DB Connected')
+      // Agregamos CORS al servidor 
   
+      server.listen(PORT, () => {
+          console.log(`Listening on Port: ${PORT} happy Codding (❁◡❁)`); // eslint-disable-line no-console
+      });
+  });
