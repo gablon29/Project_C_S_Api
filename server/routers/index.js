@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const { routerGet } = require('./get');
-const { routerPost } = require("./post");
+const routerPost  = require("./post");
 const router = Router();
 
 router.use('/', (req, res, next) => {
