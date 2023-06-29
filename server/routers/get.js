@@ -1,10 +1,7 @@
 const { Router } = require('express');
+const { showUsers } = require('../controllers/get/getUser');
 const routerGet = Router();
 
-routerGet.get('/', (req, res) => {
-    res.send('<h1>hola</h1>')
-})
+routerGet.get('/', showUsers)
 
-module.exports = {
-    routerGet
-}
+module.exports = routerGet
