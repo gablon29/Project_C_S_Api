@@ -1,27 +1,25 @@
 require('dotenv').config();
-const { createClient } = require('@supabase/supabase-js');
-const { URL_DATABASE, DB_PASSWORD } = process.env;
-
-const supabase = createClient(URL_DATABASE, DB_PASSWORD);
+const { supabase } = require('../../supabaseConfig');
 
 const getUsers = async () => {
-    const { data: Pastores, error } = await supabase
-    .from('Pastores')
-    .select('*');
-    if(error) {
-        dataUser = error
-        console.error(`error al traer los datos ${dataUser}`);
-    } else {
-        let dataUser = data;
-        console.log(data)
-        return dataUser;
+    try {
+        const { data, error } = await supabase
+            .from('Pastores')
+            .select('*');
+        if (error) {
+            throw new Error(`error al traer los datos ${error}`);
+        }
+        const users = data
+        return users;
+    } catch (error) {
+        console.error('Error en buscar', error.message)
     }
 };
+        
 
 const showUsers = async (req, res) => {
     try {
-        const data = null;
-        const users = getUsers(data);
+        const users = await getUsers();
         res.status(201).json(users);
     } catch (error) {
         console.error(error);
