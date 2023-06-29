@@ -1,9 +1,15 @@
 require('dotenv').config();
 const { createClient } = require('@supabase/supabase-js');
 const { URL_DATABASE, DB_PASSWORD } = process.env;
+const opcionSupabase = {
+    auth: {
+        autorefreshToken: true,
+        persistSession: false,
+        detectSessionUrl: true
+}
+};
 
-// Create a single supabase client for interacting with your database
-const supabase = createClient(URL_DATABASE, DB_PASSWORD);
+const supabase = createClient(URL_DATABASE, DB_PASSWORD, opcionSupabase);
 
 const createUser = async (newUser) => {
         const { data, error } = await supabase

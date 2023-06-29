@@ -1,8 +1,13 @@
 require('dotenv').config();
 const { createClient } = require('@supabase/supabase-js');
 const { URL_DATABASE, DB_PASSWORD } = process.env;
+const opcionSupabase = {
+    auth: {
+    persistSession: false
+}
+};
 
-const supabase = createClient(URL_DATABASE, DB_PASSWORD);
+const supabase = createClient(URL_DATABASE, DB_PASSWORD, opcionSupabase);
 
 const insertAPredicas = async (newPreidcas) => {
     try {
